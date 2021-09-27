@@ -1,0 +1,157 @@
+.slider-wrapper {
+  height: 100vh;
+  max-width: 786px;
+  position: relative;
+
+  .slides-list {
+    width: 100%;
+    height: 100%;
+
+    .slide {
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      transition: all 1s;
+
+      &.active {
+        opacity: 1;
+      }
+
+      .slide-img {
+        width: 100%;
+        max-width: 330px;
+        margin: auto;
+        padding: 3rem 3.5rem;
+        background: url("../images/pattern-bg.svg") no-repeat top/contain;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .slide-info {
+        margin-top: 2rem;
+        text-align: center;
+        padding: 1.7rem 0.6rem 3rem 0.8rem;
+        background: url("../images/pattern-quotes.svg") no-repeat center top;
+        background-size: 20% 15%;
+
+        blockquote {
+          font-size: 1.77rem;
+          line-height: 1.37;
+          color: $dark-Blue;
+        }
+
+        .slide-signature {
+          margin-top: 1.8rem;
+          display: flex;
+          flex-direction: column;
+
+          .name {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: $dark-Blue;
+          }
+
+          .job {
+            // margin-top: 1.8rem;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: $grayish-Blue;
+          }
+        }
+      }
+    }
+  }
+
+  .slide-controls {
+    position: absolute;
+    left: 50%;
+    top: 46.5%;
+    transform: translate(-50%, -50%);
+    width: 7.5rem;
+    height: 3.3rem;
+    padding: 0 1.2rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1),
+      -2px -2px 15px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (min-width: 992px) {
+  .slider-wrapper {
+    max-width: none;
+    margin-top: 6rem;
+
+    .slides-list {
+      position: relative;
+
+      .slide {
+        .slide-img {
+          width: 740px !important;
+          height: 615px;
+          max-width: none !important;
+          margin: 0 !important;
+          position: absolute;
+          top: -42px;
+          right: -112px;
+          z-index: -1;
+
+          img {
+            width: 74% !important;
+            margin-left: 88px;
+            margin-top: 38px;
+          }
+        }
+
+        .slide-info {
+          flex-basis: 50%;
+          max-width: 57%;
+          padding-top: 17.5rem;
+          text-align: left;
+          background-position: 17% 29%;
+
+          blockquote {
+            font-size: 3rem;
+            line-height: 1.48;
+          }
+
+          .slide-signature {
+            margin-top: 3.8rem;
+            flex-direction: row;
+            align-items: center;
+            gap: 1.5rem;
+
+            .name {
+              font-size: 2rem;
+
+              color: $dark-Blue;
+            }
+
+            .job {
+              // margin-top: 1.8rem;
+              font-size: 1.8rem;
+              font-weight: 500;
+              color: $grayish-Blue;
+            }
+          }
+        }
+      }
+    }
+
+    .slide-controls {
+      left: 50rem;
+      top: 52.5rem;
+      width: 10.5rem;
+      height: 5.5rem;
+      padding: 0 1.5rem;
+      z-index: 9999;
+      border-radius: 4rem;
+    }
+  }
+}
