@@ -180,7 +180,7 @@ footer .attribution a {
 .slider-wrapper .slide-controls {
   position: absolute;
   left: 50%;
-  top: 46.5%;
+  top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 7.5rem;
@@ -257,7 +257,7 @@ footer .attribution a {
     color: #babacf;
   }
   .slider-wrapper .slide-controls {
-    left: 50rem;
+    left: 70rem;
     top: 52.5rem;
     width: 10.5rem;
     height: 5.5rem;
