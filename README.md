@@ -39,6 +39,7 @@ Solution URL: [https://github.com/Emad-Essayed/Frontend-Mentor-Coding-bootcamp-t
 - CSS3
 - Flexbox
 - Mobile-first workflow
+- Javascript
 
 ## Author
 
